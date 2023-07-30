@@ -1,0 +1,84 @@
+<html>
+    <head>
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+  #img{
+    margin-left: 50px;
+margin-right: 50px;
+}
+.foot{
+    border-radius: 10px;
+    margin-top:20px;
+    height: 30px;
+    width: 100;
+     background-color: aliceblue;   
+}
+.foot:hover{
+    background-color:rgb(203, 212, 212);
+    border-color: black;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(22, 21, 21) ;
+}       
+</style>
+    </head>
+    <body>
+        <h1>Welcome to Goa</h1>
+            <div id="img">
+               <img class="mySlides" src="Goa3.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="goa1.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="Goa2.jpeg" style="width:100%" height="400px">
+               <img class="mySlides" src="Goa4.jpg" style="width:100%" height="400px">
+                      
+                <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div>
+            <h2>History of Goa</h2>
+            <p>
+             The ancient Hindu city of Goa, hardly a fragment of which survives, was built at the southernmost point of the island of Goa. The city was famous in early Hindu legend and history; in the Puranas and various inscriptions, its name appears as Gove, Govapuri, and Gomant. The medieval Arabian geographers knew it as Sindabur, or Sandābūr, and the Portuguese called it Velha Goa. It was ruled by the Kadamba dynasty from the 2nd century CE to 1312 and by Muslim invaders of the Deccan from 1312 to 1367. The city was then annexed by the Hindu kingdom of Vijayanagar and was later conquered by the Bahmanī sultanate, which founded Old Goa on the island in 1440.<br>
+With the subdivision of the Bahmanī kingdom after 1482, Goa passed into the power of Yūsuf ʿĀdil Khan, the Muslim king of Bijapur, who was its ruler when seafarers from Portugal first reached India. The city was attacked in March 1510 by the Portuguese under Afonso de Albuquerque. The city surrendered without a struggle, and Albuquerque entered it in triumph.
+Three months later Yūsuf ʿĀdil Khan returned with 60,000 troops, forced the passage of the ford, and blockaded the Portuguese in their ships from May to August, when the end of the monsoon season enabled them to put to sea. In November, Albuquerque returned with a larger force and, after overcoming a desperate resistance, recaptured the city, killed all the Muslims, and appointed a Hindu, Timoja, governor of Goa.
+Goa was the first territorial possession of the Portuguese in Asia. Albuquerque and his successors left almost untouched the customs and constitutions of the 30 village communities on the island, abolishing only the rite of suttee (sati; the immolation of widows on the funeral pyres of their husbands).
+Goa became the capital of the whole Portuguese empire in Asia. It was granted the same civic privileges as Lisbon, reaching the climax of its prosperity between 1575 and 1600. The appearance of the Dutch in Indian waters precipitated the decline of Goa. In 1603 and 1639 the city was blockaded by Dutch fleets, though never captured, and in 1635 it was ravaged by an epidemic. In 1683 a Mughal army saved it from capture by Maratha raiders, and in 1739 the whole territory was again attacked by the Marathas and was saved only by the unexpected arrival of a new Portuguese viceroy with a fleet.
+The seat of the government was moved to Mormugão (now Marmagao) and in 1759 to Panjim (or New Goa; now Panaji). Cholera epidemics were one of the chief reasons for the migration of the inhabitants from Old Goa to Panjim. Between 1695 and 1775 the population of Old Goa dwindled from 20,000 to 1,600; in 1835 the city was inhabited by only a few priests, monks, and nuns
+During the 19th century, major events affecting the settlement were its temporary occupation by the British in 1809 as a result of the invasion of Portugal by Napoleon I; the governorship (1855–64) of Count de Torres Novas, who inaugurated a great number of improvements; and the military revolts of the second half of the century. The most notable of the revolts was that of September 3, 1895, which necessitated the dispatch of an expeditionary force from Portugal. The infante (Portuguese prince) Affonso Henriques, duque de Oporto, accompanied this expedition and exercised governor’s powers from March to May 1896.
+After India achieved independence in 1947, it made claims on Goa in 1948 and 1949, and Portugal came under increasing pressure to cede Goa and its other possessions in the subcontinent to India. In mid-1954, Goan nationalists seized the Portuguese enclaves of Dadra and Nagar Haveli and established a pro-Indian administration. Another crisis occurred in 1955 when satyagrahis (nonviolent resisters) from India attempted to penetrate the territory of Goa. At first the satyagrahis were deported, but later, when large numbers attempted to cross the borders, the Portuguese authorities resorted to force, which resulted in many casualties. This led to the severance of diplomatic relations between Portugal and India on August 18, 1955. Tension between the two countries came to a head on December 18, 1961, when Indian troops supported by naval and air forces invaded and occupied Goa, Daman, and Diu. All three territories subsequently became part of India. Goa became a state in 1987.
+            </p>
+        </div>
+        <footer>
+            <button class="foot">
+        <a href="TourismIn.html">Go Back</a>
+    </button>
+        </footer>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+    </body>
+</html>

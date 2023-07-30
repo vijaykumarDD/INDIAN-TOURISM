@@ -1,0 +1,91 @@
+<html>
+    <head>
+<style>
+    h1{
+        text-align: center;
+        font-size: 40px;
+
+    }
+  #img{
+    margin-left: 50px;
+margin-right: 50px;
+}
+.foot{
+    border-radius: 10px;
+    margin-top:20px;
+    height: 30px;
+    width: 100;
+     background-color: aliceblue; 
+   
+}
+.foot:hover{
+    background-color:rgb(203, 212, 212);
+    border-color: black;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(22, 21, 21) ;
+}  
+    
+</style>
+    </head>
+    <body>
+        <h1>Welcome to Hyderabad</h1>
+        
+            <div id="img">
+               <img class="mySlides" src="char3.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="char.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="char1.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="char2.jpg" style="width:100%" height="400px">
+                      
+                <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div>
+            <h2>History of Charminar</h2>
+            <p>
+             This 400-years-old structure was built by Sultan Muhammed Quli Qutb Shah, the 5th Sultan of the illustrious Qutb Shahi dynasty. An inseparable part of the history of Hyderabad, the Sultan built the monument right after shifting his 
+                capital from Golkonda to Hyderabad. Historians opine that the inadequacy of water and plague forced Quli Qutub Shah to construct a new city. He prayed to the Almighty to end his people’s suffering and pledged to build a mosque at the very site where he prayed.
+                 Another legend says that the Sultan saw his beloved, the beautiful Baghmati, at this very site and built the monument as a symbol of his eternal love for her. Though this legend gained popularity, it seems inaccurate when tallied with historical dates. In addition, 
+                 the couplets inscribed during laying of the foundation stone translate as “Fill this of mine city with people as You have filled the river with fishes O Lord.”, indicating that the construction was concurrent with founding of the city.<br>
+       <h2>Structure & Architecture</h2>          
+The Charminar was built at the intersection of the historical trade route connecting the markets of Golkonda with the port city of Machhilipatnam. The city of Hyderabad was designed with the Charminar at its center, spread around in four quadrants along the four cardinal directions. 
+Mir Momin Astarabadi of the Qutb Shahi dynasty played an important role and ordered extensive preparations for the design and layout along with that of the new capital city. Architects from Persia were invited to provide additional designs and suggestions. 
+Inspired by the shapes of Shiya Tazias built to commemorate the tragic death of Prophet Muhammed’s grandson, Hussain at the battle of Karbala, the structure of the Charminar is perfectly square, with each side measuring 20m. The four grand arches open into four 
+different streets and stand 11m wide. The square structure accommodates four minarets in each corner. The minarets are 56 meters high, house two balconies, and are topped with small delicate domes and intricate carvings on the outside walls. Unlike other prominent Islamic monuments,
+ the minarets are built into the main structure. Inside the minarets there is a spiral staircase with 149 steps and 12 landings. The structure is a fine example of Indo-Islamic architecture with ample Persian influences. While arches and the domes show the influence of Islamic architecture,
+  the minarets reflect Persian influence. The delicate stucco floral ornamentations on the ceiling, the balconies and the outside walls speak of Hindu influences. 
+             </p>   
+        </div>
+        <footer>
+            <button class="foot">
+        <a href="TourismIn.html">Go Back</a>
+    </button>
+        </footer>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+    </body>
+</html>

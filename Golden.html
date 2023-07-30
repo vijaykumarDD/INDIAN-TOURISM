@@ -1,0 +1,87 @@
+<html>
+    <head>
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+  #img{
+    margin-left: 50px;
+margin-right: 50px;
+}
+.foot{
+    border-radius: 10px;
+    margin-top:20px;
+    height: 30px;
+    width: 100;
+     background-color: aliceblue;   
+}
+.foot:hover{
+    background-color:rgb(203, 212, 212);
+    border-color: black;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(22, 21, 21) ;
+}       
+</style>
+    </head>
+    <body>
+        <h1>Welcome to Golden Temple</h1>
+            <div id="img">
+               <img class="mySlides" src="Gold.jpeg" style="width:100%" height="400px">
+               <img class="mySlides" src="gold1.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="Gold2.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="Gold3.jpg" style="width:100%" height="400px">
+                      
+                <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div>
+            <h2>History of Golden Temple</h2>
+            <p>
+                Guru Ram Das, the 4th Sikh Guru commenced the digging of Amrit Sarovar (Holy Tank) of Sri Harmandir Sahib in 1577 A.D., which was later brick-lined by Sri Guru Arjan Dev Ji (5th Sikh Guru) on December 15, 1588. He also started the construction of Sri Harimandir Sahib.
+Sri Guru Granth Sahib (scripture of the Sikhs), after its compilation, was first installed at Sri Harimandir Sahib on August 16, 1604 A.D. A devout Sikh, Baba Budha Ji was appointed its first Head Priest.
+The present-day Gurudwara was renovated in 1764 by Jassa Singh Ahluwalia, a prominent Sikh leader. In the early 19th century, Maharaja Ranjit Singh safeguarded Punjab from external attack and covered the upper floors of the Gurudwara with 750kg of gold, which bagged its name – “The Golden Temple”.
+<br>
+<h2>Architectural features</h2>
+The Golden Temple has a unique Sikh architecture, which has a unique blend of Hindu and Muslim artistic styles. The temple has four entrances on four sides, welcoming people of any religion to worship at the shrine. The temple is built at a lower level than the surrounding ground level, which implies their egalitarianism and humility.
+The Gurudwara is surrounded by Sarovar, the holy tank or Amrit (Nectar), which is fed by Ravi River. The interior of the Gurudwara consists of memorial plaques of many historical Sikh events and also engravings of Sikh soldiers who died fighting World War I & II.
+All the gold and exquisite marble work was conducted under the benefaction of Hukam Singh Chimni and Emperor Ranjit Singh, Maharaja of the Sikh Empire of the Punjab. Sri Harmandir Sahib houses the world's largest free kitchen. According to the Croatian Times, it can serve free food for up to 100,000 - 300,000 people every day.
+
+
+
+            </p>
+        </div>
+        <footer>
+            <button class="foot">
+        <a href="TourismIn.html">Go Back</a>
+    </button>
+        </footer>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+    </body>
+</html>

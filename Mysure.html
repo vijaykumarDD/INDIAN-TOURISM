@@ -1,0 +1,87 @@
+<html>
+    <head>
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+  #img{
+    margin-left: 50px;
+margin-right: 50px;
+}
+.foot{
+    border-radius: 10px;
+    margin-top:20px;
+    height: 30px;
+    width: 100;
+     background-color: aliceblue;   
+}
+.foot:hover{
+    background-color:rgb(203, 212, 212);
+    border-color: black;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(22, 21, 21) ;
+}       
+</style>
+    </head>
+    <body>
+        <h1>Welcome to Mysure palace</h1>
+            <div id="img">
+               <img class="mySlides" src="Mysuree.jpeg" style="width:100%" height="400px">
+               <img class="mySlides" src="Mysure1.jpg" style="width:100%" height="400px">
+               <img class="mySlides" src="Mysure2.jpeg" style="width:100%" height="400px">
+               <img class="mySlides" src="Mysure3.jpg" style="width:100%" height="400px">
+                      
+                <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div>
+            <h2>History of Mysure Palace</h2>
+            <p>
+                The cityscape of Mysore is adorned with seven palaces, Mysore Palace being the most spectacular one. Its history dates back to the 14th century,
+                 when its foundation was laid by the Wodeyars or Wadiyars. The Old Palace was built in the Puragiri, or the Old Fort, by Yaduraya Wodeyar, the first King of Mysore.
+                The Old Palace, made entirely of wood, used to face the Chamundi Hills eastward. The initial construction was completed in 1574, after which the royal family began 
+                living here.
+                In 1638, tragedy befell upon the erstwhile fortress when it was struck by lightning. Since it was a wooden structure, the entire palace burned down. It was soon reconstructed
+                 under the reign and supervision of the 12th King of the Wodeyar dynasty, Kantirava Narasa Raja Wodeyar.
+                155 years later, in 1793, when Mysore came under the Islamic reign, Tipu Sultan decided not to swear allegiance to the Wodeyar dynasty. He knocked down the palace and reconstructed
+                 it to make it his new capital, Nazarbad. Soon after, in 1799 after the demise of Tipu Sultan, Mysore and the Mysore Palace went back to the Wodeyars. Krishnaraja Wodeyar III took it back and redid the palace following a Hindu architectural style.
+                Tragedy did not end here for the palatial abode of the rajas. In 1896, during the wedding ceremony of Princess Jayalakshammani, the eldest daughter of Chamaraja Wodeyar, the palace 
+                caught fire and was burnt down to ashes. Thus, began the reconstruction work in 1897, which went on till 1912. British architect Henry Irwin was brought on board by Maharaja Krishnaraja
+                 Wodeyar IV to redo the palace. Executive engineer in the Mysore Palace division P. Raghavulu Naidu was in charge of overseeing the construction.
+            </p>
+        </div>
+        <footer>
+            <button class="foot">
+        <a href="TourismIn.html">Go Back</a>
+    </button>
+        </footer>
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+    </body>
+</html>
